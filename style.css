@@ -1,4 +1,4 @@
-
+/* CSS Reset */
 * { 
     /* outline: 1px dotted red; */
     margin: 0;
@@ -9,6 +9,8 @@
 body {
     background-color: #f3f3f3;
     min-height: 100vh;
+    max-width: 100%;
+    font-family: 'Signika', sans-serif;
 }
 
 .main {
@@ -19,12 +21,33 @@ body {
     display: flex;
 }
 
+a {
+    text-decoration: none;
+    color: black;
+}
+
+li {
+    text-decoration: none;
+    list-style: none;
+}
+
+#try-free {
+    color: blue;
+}
+
+/* Header  */
 header {
     display: flex;
     align-items: center;
-    height: 55px;
+    height: 60px;
     border-bottom: 2px solid #f4f4f4;
-    padding: 5px 20px;
+    padding: 8px 20px;
+    font-size: 20px;
+    flex: auto;
+}
+
+nav {
+    display: flex;
     flex: auto;
 }
 
@@ -40,4 +63,8 @@ header {
     justify-content: flex-end;
     gap: 20px;
     flex: auto;
+}
+
+.account-options {
+    font-size: 16px;
 }
